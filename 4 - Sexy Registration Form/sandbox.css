@@ -78,3 +78,10 @@
     .register-wrapper form input[type="submit"]:hover {
         background-size: 40px 40px;
     }
+
+.register-title {
+    font-size: 2rem;
+    padding-bottom: 20px;
+    margin: 0 0 20px;
+    border-bottom: dashed 1px #e6e6e6;
+}
