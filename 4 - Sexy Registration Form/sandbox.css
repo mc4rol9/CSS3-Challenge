@@ -12,6 +12,7 @@
     z-index: 3;
     padding: 100px;
     color: #999;
+    font-size: 1rem;
 }
 
 /* the * selects all withing the parent div */
@@ -80,7 +81,7 @@
     }
 
 .register-title {
-    font-size: 2rem;
+    font-size: 1.6rem;
     padding-bottom: 20px;
     margin: 0 0 20px;
     border-bottom: dashed 1px #e6e6e6;
