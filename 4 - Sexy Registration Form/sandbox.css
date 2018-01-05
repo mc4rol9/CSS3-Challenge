@@ -3,3 +3,19 @@
     CODE YOUR STYLES BELOW!
 
    ====================================== */
+
+
+.register-wrapper {
+    background-image: -webkit-linear-gradient(135deg, #0eeff0 30%, #088f90 90%);
+    background-image:         linear-gradient(135deg, #0eeff0 30%, #088f90 90%);
+    position: relative;
+    z-index: 3;
+    padding: 100px;
+    color: #999;
+}
+
+/* the * selects all withing the parent div */
+/* defining the max size of the div */
+.register-wrapper * {
+    box-sizing: border-box;
+}
