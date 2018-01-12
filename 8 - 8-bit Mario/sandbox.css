@@ -17,35 +17,51 @@
     height: 16em;
 }
 
+/* create the btn animation for Mario */
+#wahoo {
+    outline: none;
+}
+
+#wahoo:active + .mario-block {
+    animation: wahooMario 0.8s ease-in-out 1;
+}
+
+@keyframes wahooMario {
+    0% { left: 0; bottom: 0; transform: rotate(0); }
+    30% { left: 200px; bottom: 200px; transform: rotate(-25deg); }
+    80% { left: 400px; bottom: 0; transform: rotate(0); }
+    100% { left: 0; bottom: 0; }
+}
+
 /* Mario made by box shadow */
 .mario {
     display: block;
     width: 1em;
     height: 1em;
-    background-color: #e7eef1;
+    background-color: transparent;
     /* box shadow to draw the 8bit Mario. Start with a line of background */
-    box-shadow: 0em 0em #e7eef1,
-                1em 0em #e7eef1,
-                2em 0em #e7eef1,
-                3em 0em #e7eef1,
-                4em 0em #e7eef1,
-                5em 0em #e7eef1,
-                6em 0em #e7eef1,
-                7em 0em #e7eef1,
-                8em 0em #e7eef1,
-                9em 0em #e7eef1,
-                10em 0em #e7eef1,
-                11em 0em #e7eef1,
-                12em 0em #e7eef1,
-                13em 0em #e7eef1,
-                14em 0em #e7eef1,
-                15em 0em #e7eef1,
+    box-shadow: 0em 0em transparent,
+                1em 0em transparent,
+                2em 0em transparent,
+                3em 0em transparent,
+                4em 0em transparent,
+                5em 0em transparent,
+                6em 0em transparent,
+                7em 0em transparent,
+                8em 0em transparent,
+                9em 0em transparent,
+                10em 0em transparent,
+                11em 0em transparent,
+                12em 0em transparent,
+                13em 0em transparent,
+                14em 0em transparent,
+                15em 0em transparent,
                 /* line 2 */
                 /* background pixels */
-                0em 1em #e7eef1,
-                2em 1em #e7eef1,
-                3em 1em #e7eef1,
-                4em 1em #e7eef1,
+                0em 1em transparent,
+                2em 1em transparent,
+                3em 1em transparent,
+                4em 1em transparent,
                 /* red pixels */
                 5em 1em red,
                 6em 1em red,
@@ -53,18 +69,18 @@
                 8em 1em red,
                 9em 1em red,
                 /* background pixels */
-                10em 1em #e7eef1,
-                11em 1em #e7eef1,
+                10em 1em transparent,
+                11em 1em transparent,
                 /* skin pixels */
                 12em 1em #ffc966,
                 13em 1em #ffc966,
                 14em 1em #ffc966,
-                15em 1em #e7eef1,
+                15em 1em transparent,
                 /* line 3 */
-                0em 2em #e7eef1,
-                1em 2em #e7eef1,
-                2em 2em #e7eef1,
-                3em 2em #e7eef1,
+                0em 2em transparent,
+                1em 2em transparent,
+                2em 2em transparent,
+                3em 2em transparent,
 
                 4em 2em red,
                 5em 2em red,
@@ -79,12 +95,12 @@
                 13em 2em #ffc966,
                 14em 2em #ffc966,
 
-                15em 2em #e7eef1,
+                15em 2em transparent,
                 /* line 4 */
-                0em 3em #e7eef1,
-                1em 3em #e7eef1,
-                2em 3em #e7eef1,
-                3em 3em #e7eef1,
+                0em 3em transparent,
+                1em 3em transparent,
+                2em 3em transparent,
+                3em 3em transparent,
 
                 4em 3em brown,
                 5em 3em brown,
@@ -97,17 +113,17 @@
 
                 10em 3em #ffc966,
 
-                11em 3em #e7eef1,
+                11em 3em transparent,
 
                 12em 3em red,
                 13em 3em red,
                 14em 3em red,
 
-                15em 3em #e7eef1,
+                15em 3em transparent,
                 /* line 5 */
-                0em 4em #e7eef1,
-                1em 4em #e7eef1,
-                2em 4em #e7eef1,
+                0em 4em transparent,
+                1em 4em transparent,
+                2em 4em transparent,
 
                 3em 4em brown,
 
@@ -128,11 +144,11 @@
                 13em 4em red,
                 14em 4em red,
 
-                15em 4em #e7eef1,
+                15em 4em transparent,
                 /* line 6 */
-                0em 5em #e7eef1,
-                1em 5em #e7eef1,
-                2em 5em #e7eef1,
+                0em 5em transparent,
+                1em 5em transparent,
+                2em 5em transparent,
 
                 3em 5em brown,
 
@@ -153,11 +169,11 @@
 
                 14em 5em red,
 
-                15em 5em #e7eef1,
+                15em 5em transparent,
                 /* line 7 */
-                0em 6em #e7eef1,
-                1em 6em #e7eef1,
-                2em 6em #e7eef1,
+                0em 6em transparent,
+                1em 6em transparent,
+                2em 6em transparent,
 
                 3em 6em brown,
                 4em 6em brown,
@@ -175,13 +191,13 @@
                 13em 6em red,
                 14em 6em red,
 
-                15em 6em #e7eef1,
+                15em 6em transparent,
                 /* line 8 */
-                0em 7em #e7eef1,
-                1em 7em #e7eef1,
-                2em 7em #e7eef1,
-                3em 7em #e7eef1,
-                4em 7em #e7eef1,
+                0em 7em transparent,
+                1em 7em transparent,
+                2em 7em transparent,
+                3em 7em transparent,
+                4em 7em transparent,
 
                 5em 7em #ffc966,
                 6em 7em #ffc966,
@@ -194,11 +210,11 @@
                 12em 7em red,
                 13em 7em red,
 
-                14em 7em #e7eef1,
-                15em 7em #e7eef1,
+                14em 7em transparent,
+                15em 7em transparent,
                 /* line 9 */
-                0em 8em #e7eef1,
-                1em 8em #e7eef1,
+                0em 8em transparent,
+                1em 8em transparent,
 
                 2em 8em red,
                 3em 8em red,
@@ -216,8 +232,8 @@
                 11em 8em red,
                 12em 8em red,
 
-                13em 8em #e7eef1,
-                14em 8em #e7eef1,
+                13em 8em transparent,
+                14em 8em transparent,
 
                 15em 8em brown,
                 /* line 10 */
@@ -238,8 +254,8 @@
 
                 11em 9em blue,
 
-                12em 9em #e7eef1,
-                13em 9em #e7eef1,
+                12em 9em transparent,
+                13em 9em transparent,
 
                 14em 9em brown,
                 15em 9em brown,
@@ -266,12 +282,12 @@
                 14em 10em brown,
                 15em 10em brown,
                 /* line 12 */
-                0em 11em #e7eef1,
+                0em 11em transparent,
 
                 1em 11em #ffc966,
 
-                2em 11em #e7eef1,
-                3em 11em #e7eef1,
+                2em 11em transparent,
+                3em 11em transparent,
 
                 4em 11em blue,
 
@@ -291,8 +307,8 @@
                 14em 11em brown,
                 15em 11em brown,
                 /* line 13 */
-                0em 12em #e7eef1,
-                1em 12em #e7eef1,
+                0em 12em transparent,
+                1em 12em transparent,
 
                 2em 12em brown,
                 3em 12em brown,
@@ -311,7 +327,7 @@
                 14em 12em brown,
                 15em 12em brown,
                 /* line 14 */
-                0em 13em #e7eef1,
+                0em 13em transparent,
 
                 1em 13em brown,
                 2em 13em brown,
@@ -324,46 +340,46 @@
                 8em 13em blue,
                 9em 13em blue,
 
-                10em 13em #e7eef1,
-                11em 13em #e7eef1,
-                12em 13em #e7eef1,
-                13em 13em #e7eef1,
-                14em 13em #e7eef1,
-                15em 13em #e7eef1,
+                10em 13em transparent,
+                11em 13em transparent,
+                12em 13em transparent,
+                13em 13em transparent,
+                14em 13em transparent,
+                15em 13em transparent,
                 /* line 15 */
-                0em 14em #e7eef1,
+                0em 14em transparent,
 
                 1em 14em brown,
                 2em 14em brown,
 
-                3em 14em #e7eef1,
-                4em 14em #e7eef1,
-                5em 14em #e7eef1,
-                6em 14em #e7eef1,
-                7em 14em #e7eef1,
-                8em 14em #e7eef1,
-                9em 14em #e7eef1,
-                10em 14em #e7eef1,
-                11em 14em #e7eef1,
-                12em 14em #e7eef1,
-                13em 14em #e7eef1,
-                14em 14em #e7eef1,
-                15em 14em #e7eef1,
+                3em 14em transparent,
+                4em 14em transparent,
+                5em 14em transparent,
+                6em 14em transparent,
+                7em 14em transparent,
+                8em 14em transparent,
+                9em 14em transparent,
+                10em 14em transparent,
+                11em 14em transparent,
+                12em 14em transparent,
+                13em 14em transparent,
+                14em 14em transparent,
+                15em 14em transparent,
                 /* line 16 */
-                0em 15em #e7eef1,
-                1em 15em #e7eef1,
-                2em 15em #e7eef1,
-                3em 15em #e7eef1,
-                4em 15em #e7eef1,
-                5em 15em #e7eef1,
-                6em 15em #e7eef1,
-                7em 15em #e7eef1,
-                8em 15em #e7eef1,
-                9em 15em #e7eef1,
-                10em 15em #e7eef1,
-                11em 15em #e7eef1,
-                12em 15em #e7eef1,
-                13em 15em #e7eef1,
-                14em 15em #e7eef1,
-                15em 15em #e7eef1;
+                0em 15em transparent,
+                1em 15em transparent,
+                2em 15em transparent,
+                3em 15em transparent,
+                4em 15em transparent,
+                5em 15em transparent,
+                6em 15em transparent,
+                7em 15em transparent,
+                8em 15em transparent,
+                9em 15em transparent,
+                10em 15em transparent,
+                11em 15em transparent,
+                12em 15em transparent,
+                13em 15em transparent,
+                14em 15em transparent,
+                15em 15em transparent;
 }
