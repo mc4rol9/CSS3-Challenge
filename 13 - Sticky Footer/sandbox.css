@@ -3,3 +3,25 @@
     CODE YOUR STYLES BELOW!
 
    ====================================== */
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+.page-content {
+    min-height: 100%;
+    /* the margin-bottom negative is the same value as the footer height, to not scrolling */
+    margin-bottom: -120px;
+}
+
+.page-content::after {
+    content: "";
+    display: block;
+}
+
+footer,
+.page-content::after {
+    height: 120px;
+}
