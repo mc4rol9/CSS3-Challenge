@@ -31,3 +31,17 @@
         -webkit-filter: grayscale(0);
                 filter: grayscale(0);
     }
+
+
+/* 
+-- BLUR IMG
+*/
+.blur {
+    -webkit-filter: blur(3px);
+            filter: blur(3px);
+}
+
+    .blur:hover {
+        -webkit-filter: blur(0);
+                filter: blur(0);
+    }
