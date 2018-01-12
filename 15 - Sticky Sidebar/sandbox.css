@@ -32,3 +32,25 @@
     width: 36%;
     float: right;
 }
+
+
+/* 
+-- RESPONSIVE MEDIA QUERY
+*/
+@media screen and ( max-width: 1023px ) {
+    .sticky-sidebar-lesson {
+        margin-bottom: 5%;
+    }
+
+    .sticky-sidebar-lesson .sandbox {
+        width: 100%;
+        float: left;
+    }
+
+    .sticky-sidebar {
+        position: relative;
+        width: 100%;
+        margin: 0 auto;
+        right: 0;
+    }
+}
