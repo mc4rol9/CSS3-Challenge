@@ -3,3 +3,34 @@
     CODE YOUR STYLES BELOW!
 
    ====================================== */
+
+/* 
+-- CSS VARIABLES/CUSTOM PROPERTIES
+*/
+.sandbox {
+    /* declare variables/custom properties to be used in this selector */
+    /* to make variables avaiable to all, the selector must be body or ::root */
+    --primary-color: orangered;
+    --secondary-color: hotpink;
+    --base-measurement: 20px;
+}
+
+.sandbox .box {
+    text-align: center;
+    /* create a new property for this element */
+    --text-color: #f3f3f3;
+
+    /* access the custom properties */
+    color:      var(--text-color);
+    background: var(--primary-color);
+    margin:     var(--base-measurement);
+
+    /* using math within variables */
+    height:      calc( var(--base-measurement) * 10 );
+    width:       calc( var(--base-measurement) * 10 );
+    line-height: calc( var(--base-measurement) * 10 );
+}
+
+.sandbox .box2 {
+    background: var(--secondary-color);
+}
