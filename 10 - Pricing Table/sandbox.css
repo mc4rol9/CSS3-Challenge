@@ -113,3 +113,31 @@
     background-color: #333;
     color: #fff; 
 }
+
+/* 
+-- FEATURED TABLE STYLES
+*/
+.pricing-popular {
+    margin-top: -20px;
+}
+
+.pricing-popular .pricing-header {
+    padding-top: 50px;
+}
+
+.pricing-popular .pricing-footer {
+    padding-top: 60px;
+}
+
+.pricing-popular .pricing-price {
+    color: #ff8888;
+}
+
+.pricing-popular .pricing-button {
+    background-color: #ff8888;
+}
+
+    .pricing-popular .pricing-button:hover {
+        background: #333;
+        color: #ff8888;
+    }
