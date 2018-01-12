@@ -4,18 +4,24 @@
 
    ====================================== */
 
-/* 
--- GRAYSCALE IMG
+/*
+-- GENERAL EFFECTS
 */
+
+/* hover effect to all images */
 .sandbox img {
-    -webkit-transition: all 0.3s ease;
-            transition: all 0.3s ease;
+-webkit-transition: all 0.3s ease;
+        transition: all 0.3s ease;
 }
 
     .sandbox img:hover {
         cursor: crosshair;
     }
 
+
+/* 
+-- GRAYSCALE IMG
+*/
 .grayscale {
     -webkit-filter: grayscale(1);
             filter: grayscale(1);
@@ -25,4 +31,3 @@
         -webkit-filter: grayscale(0);
                 filter: grayscale(0);
     }
-
