@@ -114,6 +114,7 @@
     color: #fff; 
 }
 
+
 /* 
 -- FEATURED TABLE STYLES
 */
@@ -141,3 +142,56 @@
         background: #333;
         color: #ff8888;
     }
+
+
+/* 
+-- RESPONSIVE MEDIA QUERY
+*/
+@media screen and ( max-width: 1023px ) {
+    .pricing-table {
+        margin: auto;
+    }   
+    
+    .pricing-table > div {
+        float: none;
+        width: 100%;
+    }
+
+    .pricing-table > div:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .pricing-body {
+        max-width: 100%;
+        overflow: hidden;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    .pricing-body ul li {
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+        .pricing-body ul li:not(:first-child) {
+            margin-left: -5px;
+        }
+
+        .pricing-body ul li:nth-child(2n) {
+            background-color: #e8e8e8;
+        }
+
+    .pricing-footer {
+        padding-top: 0;
+    }
+
+    .pricing-popular {
+        margin-top: 0;
+    }
+
+    .pricing-popular .pricing-header,
+    .pricing-popular .pricing.pricing-footer {
+        padding-top: 30px;
+    }
+}
