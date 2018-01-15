@@ -4,6 +4,9 @@
 
    ====================================== */
 
+/* 
+-- Base Overlay
+*/
 .overlay {
     position: fixed;
     top: 0;
@@ -25,4 +28,37 @@ input[type="checkbox"]:checked ~ .overlay {
             transform: scale(1);
     -webkit-transition: transform 0.5s ease, opacity 0.5s ease;
             transition: transform 0.5s ease, opacity 0.5s ease; 
+}
+
+
+/* 
+-- Modal
+*/
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 100;
+    -webkit-transform: translate(-50%, -50%) scale(0.5);
+            transform: translate(-50%, -50%) scale(0.5);
+    width: 100%;
+    max-width: 640px;
+    pointer-events: none;
+    opacity: 0;
+}
+
+input[type="checkbox"]:checked ~ .modal {
+    pointer-events: auto;
+    opacity: 1;
+    -webkit-transform: translate(-50%, -50%) scale(1);
+            transform: translate(-50%, -50%) scale(1);
+    -webkit-transition: transform 0.5s ease, opacity 0.5s ease;
+            transition: transform 0.5s ease, opacity 0.5s ease;
+    transition-delay: 0.1s;
+}
+
+.modal__content {
+    display: block;
+    padding: 30px;
+    background: #fff;
 }
