@@ -64,7 +64,7 @@
 }
 
 
-/* -- top tooltip -- */
+/* -- right tooltip -- */
 .tooltip.right::before {
     top: 50%;
     left: calc(100% + 5px);
@@ -77,4 +77,19 @@
     top: 50%;
     left: 100%;
     transform: translateY(-50%);
+}
+
+/* -- bottom tooltip -- */
+.tooltip.bottom::before {
+    top: calc(100% + 5px);
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.tooltip.bottom::after {
+    top: 100%;
+    left: 50%;
+    border-bottom-color: rgba(0,0,0,0.8);
+    border-top-width: 0;
+    transform: translateX(-50%);
 }
