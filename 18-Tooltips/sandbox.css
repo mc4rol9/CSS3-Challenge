@@ -4,9 +4,7 @@
 
    ====================================== */
 
-/* 
--- Element target
-*/
+/* -- element target -- */
 .tooltip {
     position: relative;
     height: 60px;
@@ -18,3 +16,33 @@
     font-size: 18px;
     margin: 0 auto;
 }
+
+    /* -- general tooltip -- */
+    .tooltip:hover::before,
+    .tooltip:hover::after {
+        display: inline-block;
+    }
+
+    .tooltip::before {
+        position: absolute;
+        z-index: 2;
+        display: none;
+        width: 200px;
+        padding: 10px;
+        font-size: 0.8em;
+        line-height: 1.4em;
+        border-radius: 5px;
+        background-color: rgba(0,0,0,0.8);
+        color: white;
+        content: attr(title);
+    }
+
+    .tooltip::after {
+        position: absolute;
+        z-index: 1;
+        display: none;
+        width: 0;
+        height: 0;
+        border: 5px solid transparent;
+        content: "";
+    }
