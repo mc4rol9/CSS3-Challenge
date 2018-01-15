@@ -46,3 +46,18 @@
         border: 5px solid transparent;
         content: "";
     }
+
+/* -- top tooltip -- */
+.tooltip.top::before {
+    bottom: calc(100% + 5px);
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.tooltip.top::after {
+    bottom: 100%;
+    left: 50%;
+    border-top-color: rgba(0,0,0,0.8);
+    border-bottom-width: 0;
+    transform: translateX(-50%);
+}
