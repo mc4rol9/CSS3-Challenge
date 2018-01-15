@@ -93,3 +93,18 @@
     border-top-width: 0;
     transform: translateX(-50%);
 }
+
+/* -- left tooltip -- */
+.tooltip.left::before {
+    top: 50%;
+    right: calc(100% + 5px);
+    transform: translateY(-50%);
+}
+
+.tooltip.left::after {
+    top: 50%;
+    right: 100%;
+    border-left-color: rgba(0,0,0,0.8);
+    border-right-width: 0;
+    transform: translateY(-50%);
+}
