@@ -18,11 +18,6 @@
 }
 
     /* -- general tooltip -- */
-    .tooltip:hover::before,
-    .tooltip:hover::after {
-        display: inline-block;
-    }
-
     .tooltip::before {
         position: absolute;
         z-index: 2;
@@ -47,6 +42,12 @@
         content: "";
     }
 
+    .tooltip:hover::before,
+    .tooltip:hover::after {
+        display: inline-block;
+    }
+
+
 /* -- top tooltip -- */
 .tooltip.top::before {
     bottom: calc(100% + 5px);
@@ -60,4 +61,20 @@
     border-top-color: rgba(0,0,0,0.8);
     border-bottom-width: 0;
     transform: translateX(-50%);
+}
+
+
+/* -- top tooltip -- */
+.tooltip.right::before {
+    top: 50%;
+    left: calc(100% + 5px);
+    transform: translateY(-50%);
+}
+
+.tooltip.right::after {
+    border-right-color: rgba(0,0,0,0.8);
+    border-left-width: 0;
+    top: 50%;
+    left: 100%;
+    transform: translateY(-50%);
 }
