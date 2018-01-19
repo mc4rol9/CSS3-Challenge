@@ -23,6 +23,7 @@
     line-height: 100px;
     text-align: center;
     font-size: 0.8em;
+    transition: all ease 0.6s;
 }
 
 .top {
