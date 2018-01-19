@@ -3,3 +3,23 @@
     CODE YOUR STYLES BELOW!
 
    ====================================== */
+
+/* 
+-- BAR 1
+*/
+.triangle {
+    position: relative;
+    height: 320px;
+    clip-path: polygon(50% 0, 20% 100%, 80% 100%);
+}
+
+.triangle div {
+    background: red;
+    width: 100%;
+    height: 100px;
+    margin: 0 auto 10px;
+    color: white;
+    line-height: 100px;
+    text-align: center;
+    font-size: 0.8em;
+}
