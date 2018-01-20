@@ -42,3 +42,11 @@
     .slide:hover .slide-content {
         transform: translate(0, 0);
     }
+
+/*
+-- Animate Directions
+*/
+/* Slide from top */
+.slide-top .slide-content {
+    transform: translate(0, -100%);
+}
