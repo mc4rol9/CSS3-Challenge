@@ -53,5 +53,10 @@
 
 /* Slide from right */
 .slide-right .slide-content {
-    transform: translate(-100%, 0);
+    transform: translate(100%, 0);
+}
+
+/* Slide from bottom */
+.slide-bottom .slide-content {
+    transform: translate(0, 100%);
 }
