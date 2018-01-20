@@ -50,3 +50,8 @@
 .slide-top .slide-content {
     transform: translate(0, -100%);
 }
+
+/* Slide from right */
+.slide-right .slide-content {
+    transform: translate(-100%, 0);
+}
