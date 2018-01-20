@@ -3,3 +3,17 @@
     CODE YOUR STYLES BELOW!
 
    ====================================== */
+
+.layers {
+    position: relative;
+    min-height: 640px;
+    max-width: 360px;
+}
+
+.layers img {
+    position: absolute;
+    max-width: 100%;
+    height: 100%;
+    transition: all ease 1600ms;
+    transform-style: preserve-3d;
+}
