@@ -34,3 +34,9 @@
     left: 40px;
     top: -150px;
 }
+
+/* animate on hover */
+.layers:hover img {
+    transform: perspective(1200px) rotateX(50deg) rotateY(20deg) rotateZ(-25deg)
+               translateX(35px) translateY(0px) translateZ(180px);
+}
