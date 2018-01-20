@@ -17,3 +17,20 @@
     transition: all ease 1600ms;
     transform-style: preserve-3d;
 }
+
+.layers img.mid {
+    width: 320px;
+    left: 20px;
+}
+
+.layers img.top {
+    width: 300px;
+    left: 30px;
+    top: -5px;
+}
+
+.layers img.tippy {
+    width: 280px;
+    left: 40px;
+    top: -150px;
+}
