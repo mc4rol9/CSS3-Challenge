@@ -60,3 +60,8 @@
 .slide-bottom .slide-content {
     transform: translate(0, 100%);
 }
+
+/* Slide from left */
+.slide-left .slide-content {
+    transform: translate(-100%, 0);
+}
